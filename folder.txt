@@ -1,0 +1,15 @@
+sh-4.4$ /bin/bash                                                                                                                                
+bash-4.4$ mkdir folder                                                                                                                           
+bash-4.4$ touch folder/test_{A..E}                                                                                                   
+bash-4.4$ date >test_A                                                                                                                                                                                   
+bash-4.4$ date >test_B                                                                                                                           
+bash-4.4$ date >test_C                                                                                                                           
+bash-4.4$ date >test_D                                                                                                                           
+bash-4.4$ date >test_E                                                                                                                           
+bash-4.4$ grep -c -h 2017 test_{A..E}                                                                                                            
+1                                                                                                                                                
+1                                                                                                                                                
+1                                                                                                                                                
+1                                                                                                                                                
+1                                                                                                                              
+bash-4.4$ rm -rf folder   
